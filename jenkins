@@ -4,13 +4,13 @@ pipeline {
     stage('version') {
       steps {
           echo 'Running version stage'
-          bat 'C:\Program Files\python.exe --version'         
+          bat 'python --version'         
       }
     }
     stage('hello') {
       steps {
           echo 'Running hello stage'
-          bat 'C:\Program Files\python.exe hello.py'  
+          bat 'python hello.py'  
       }
     }
   }
