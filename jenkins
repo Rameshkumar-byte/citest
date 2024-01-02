@@ -1,0 +1,18 @@
+pipeline {
+  agent any
+  stages {
+    stage('version') {
+      steps {
+         echo "hello"
+         cd /d E:
+         cd "E:\Proaudio\Jenkins\python"
+         python hello.py
+      }
+    }
+    stage('hello') {
+      steps {
+         echo "completed"
+      }
+    }
+  }
+}
