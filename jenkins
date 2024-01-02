@@ -4,15 +4,13 @@ pipeline {
     stage('version') {
       steps {
          echo "hello"
-         "/d E:"
-         "E:\\Proaudio\\Jenkins\\python"
-         python hello.py
+         echo  python --version
    
       }
     }
     stage('hello') {
       steps {
-         echo "completed"
+         python hello.py
       }
     }
   }
