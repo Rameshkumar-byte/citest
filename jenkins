@@ -11,7 +11,7 @@ pipeline {
     stage('hello') {
       steps {
          
-         cd python hello.py
+         cd "python hello.py"
       }
     }
   }
