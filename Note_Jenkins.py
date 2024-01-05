@@ -6,7 +6,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        bat 'E:\\Note1.bat'
+                        bat 'E:\\Note.bat'
                     } catch (Exception e) {
                         echo "Error executing batch file: ${e.message}"
                         currentBuild.result = 'FAILURE'
